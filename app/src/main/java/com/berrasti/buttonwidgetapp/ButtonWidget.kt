@@ -12,7 +12,7 @@ class ButtonWidget : AppWidgetProvider() {
 
     companion object {
         var currentInput: String = ""
-        private const val yenToUsdRate = 133.5 // Fijo, después lo mejoramos si querés
+        private const val yenToUsdRate = 143.6 // Fijo, después lo mejoramos si querés
     }
 
     override fun onUpdate(context: Context, appWidgetManager: AppWidgetManager, appWidgetIds: IntArray) {
@@ -56,11 +56,11 @@ class ButtonWidget : AppWidgetProvider() {
 
         // Actualizar los textos
         val inputToShow = if (currentInput.isEmpty()) "0" else currentInput
-        views.setTextViewText(R.id.textYen, "$inputToShow YEN")
+        views.setTextViewText(R.id.textYen, "$inputToShow")
 
         val amount = currentInput.toDoubleOrNull() ?: 0.0
         val converted = amount / yenToUsdRate
-        views.setTextViewText(R.id.textUsd, String.format("%.2f USD", converted))
+        views.setTextViewText(R.id.textUsd, String.format("%.2f", converted))
 
         // Setear acciones en los botones
         val buttons = listOf(
