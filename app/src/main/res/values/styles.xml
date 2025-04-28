@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WidgetButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:background">@drawable/bg_button_normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="WidgetButtonGreen">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">80dp</item>
+    <item name="android:layout_columnWeight">1</item>
+    <item name="android:background">@drawable/bg_button_green</item>
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textSize">24sp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="WidgetButtonRed">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">80dp</item>
+    <item name="android:layout_columnWeight">1</item>
+    <item name="android:background">@drawable/bg_button_red</item>
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textSize">24sp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:padding">12dp</item>
+    </style>
+</resources>

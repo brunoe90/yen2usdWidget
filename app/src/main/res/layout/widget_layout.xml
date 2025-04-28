@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#222222"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textYen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/imgJapan"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/flag_japan"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Jap_flg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textUsd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#00FF00"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/imgUSA"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/flag_usa"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="usa_flag" />
+
+    </LinearLayout>
+
+    <!-- Teclado numérico -->
+    <GridLayout
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:layout_marginTop="12dp"
+        android:alignmentMode="alignMargins"
+        android:rowCount="4">
+
+        <!-- Fila 1 -->
+        <Button android:id="@+id/btn7" style="@style/WidgetButton" android:text="7" />
+        <Button android:id="@+id/btn8" style="@style/WidgetButton" android:text="8" />
+        <Button android:id="@+id/btn9" style="@style/WidgetButton" android:text="9" />
+        <Button android:id="@+id/btnClear" style="@style/WidgetButtonRed" android:text="C" />
+
+        <!-- Fila 2 -->
+        <Button android:id="@+id/btn4" style="@style/WidgetButton" android:text="4" />
+        <Button android:id="@+id/btn5" style="@style/WidgetButton" android:text="5" />
+        <Button android:id="@+id/btn6" style="@style/WidgetButton" android:text="6" />
+        <Button android:id="@+id/btnBack" style="@style/WidgetButtonRed" android:text="←" />
+
+        <!-- Fila 3 -->
+        <Button android:id="@+id/btn1" style="@style/WidgetButton" android:text="1" />
+        <Button android:id="@+id/btn2" style="@style/WidgetButton" android:text="2" />
+        <Button android:id="@+id/btn3" style="@style/WidgetButton" android:text="3" />
+        <Button android:id="@+id/btnConvert" style="@style/WidgetButtonGreen" android:text="=" />
+
+        <!-- Fila 4 -->
+        <Button android:id="@+id/btn0" style="@style/WidgetButton" android:text="0" />
+        <Button android:id="@+id/btnDot" style="@style/WidgetButton" android:text="." />
+    </GridLayout>
+
+</LinearLayout>
