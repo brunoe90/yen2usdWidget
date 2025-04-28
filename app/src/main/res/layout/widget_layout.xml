@@ -88,7 +88,7 @@
         <Button android:id="@+id/btn1" style="@style/WidgetButton" android:text="1" />
         <Button android:id="@+id/btn2" style="@style/WidgetButton" android:text="2" />
         <Button android:id="@+id/btn3" style="@style/WidgetButton" android:text="3" />
-        <Button android:id="@+id/btnConvert" style="@style/WidgetButtonGreen" android:text="=" />
+        <Button android:id="@+id/btnConvert" style="@style/WidgetButtonGreen" android:text="↔" />
 
         <!-- Fila 4 -->
         <Button android:id="@+id/btn0" style="@style/WidgetButton" android:text="0" />
