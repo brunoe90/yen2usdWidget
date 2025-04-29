@@ -76,23 +76,23 @@
         <Button android:id="@+id/btn7" style="@style/WidgetButton" android:text="7" />
         <Button android:id="@+id/btn8" style="@style/WidgetButton" android:text="8" />
         <Button android:id="@+id/btn9" style="@style/WidgetButton" android:text="9" />
-        <Button android:id="@+id/btnClear" style="@style/WidgetButtonRed" android:text="C" />
-
+        <Button android:id="@+id/btnEmpty" style="@style/WidgetButton" android:text=" " />
         <!-- Fila 2 -->
         <Button android:id="@+id/btn4" style="@style/WidgetButton" android:text="4" />
         <Button android:id="@+id/btn5" style="@style/WidgetButton" android:text="5" />
         <Button android:id="@+id/btn6" style="@style/WidgetButton" android:text="6" />
-        <Button android:id="@+id/btnBack" style="@style/WidgetButtonRed" android:text="←" />
+        <Button android:id="@+id/btnClear" style="@style/WidgetButtonRed" android:text="C" />
 
         <!-- Fila 3 -->
         <Button android:id="@+id/btn1" style="@style/WidgetButton" android:text="1" />
         <Button android:id="@+id/btn2" style="@style/WidgetButton" android:text="2" />
         <Button android:id="@+id/btn3" style="@style/WidgetButton" android:text="3" />
-        <Button android:id="@+id/btnConvert" style="@style/WidgetButtonGreen" android:text="↔" />
-
+        <Button android:id="@+id/btnBack" style="@style/WidgetButtonRed" android:text="←" />
         <!-- Fila 4 -->
         <Button android:id="@+id/btn0" style="@style/WidgetButton" android:text="0" />
         <Button android:id="@+id/btnDot" style="@style/WidgetButton" android:text="." />
+        <Button android:id="@+id/btnDebug" style="@style/WidgetButton" android:text="↻" />
+        <Button android:id="@+id/btnConvert" style="@style/WidgetButtonGreen" android:text="↔" />
     </GridLayout>
 
 </LinearLayout>
